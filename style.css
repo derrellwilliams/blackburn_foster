@@ -3,6 +3,8 @@ body{
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
+  margin:0;
+  padding:0;
 
 }
 
@@ -18,11 +20,11 @@ img {
   width: 100%;
 }
 
-::selection     {background: rgb(255,204,0);}
-::-moz-selection  {background: rgb(255,204,0);}
+::selection     {background: rgb(255,255,255);}
+::-moz-selection  {background: rgb(255,255,255);}
 img::selection    {background: transparent;}
 img::-moz-selection {background: transparent;}
-body {-webkit-tap-highlight-color: rgb(255,204,0);}
+body {-webkit-tap-highlight-color: rgb(255,255,255);}
 
 h1 {
   font-family: "alternate-gothic-no-1-d";
@@ -76,7 +78,7 @@ h2 {
     position: inherit;
     text-align: left;
     vertical-align: top;
-    width: 30%;
+    width: 25%;
 }
 
 #content {
@@ -105,9 +107,83 @@ h2 {
 	margin: 5px 0 0 30px;
 }
 
+.logotype h1 a {
+  text-decoration: none;
+  color: #333739;
+}
+
+.logotype h1 a:hover {
+  color: #656565;
+   -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+
 .logotype h1 a{
   text-decoration: none;
+   -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
 }
+
+.menu ul{
+  margin:15px 0 15px 30px;
+  padding:0;
+
+}
+
+.menu li {
+  display: inline;
+  list-style-type: none;
+  font-family: "alternate-gothic-no-1-d";
+  color: #333739;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0 0 0 -4px;
+  height: 20px;
+}
+
+.menu li a{
+  padding: 5px 12px 3px 12px;
+}
+
+li.one{
+  border-left: 3px solid #333739;
+  border-bottom: 3px solid #333739;
+  border-top: 3px solid #333739;
+
+}
+
+li.two{
+  border-left: 3px solid #333739;
+  border-bottom: 3px solid #333739;
+  border-top: 3px solid #333739;
+}
+
+li.three{
+  border: 3px solid #333739;
+}
+
+li.one, li.two, li.three, a{
+  text-decoration: none;
+  color: #333739;
+  padding: 5px 0 3px 0;
+
+}
+
+li a:hover{
+  text-decoration: none;
+  background-color: #333739;
+  color: #fff;
+   -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
+
 
 p {
 	font-family: courier;
@@ -117,7 +193,11 @@ p {
 }
 
 .social_icons {
-  margin: 20px 0 0 30px;
+  margin: 10px 0px 0 30px;
+}
+
+.ss-icon{
+  margin-right: 8px;
 }
 
 
