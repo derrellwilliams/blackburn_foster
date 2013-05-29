@@ -1,3 +1,13 @@
+::selection     {background: rgb(255,255,255);}
+::-moz-selection  {background: rgb(255,255,255);}
+img::selection    {background: transparent;}
+img::-moz-selection {background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,255);}
+
+* {
+  box-sizing: border-box
+  }
+
 body{
 	background-color: #f6f1e9;
   text-rendering: optimizeLegibility;
@@ -5,7 +15,10 @@ body{
   font-smoothing: antialiased;
   margin:0;
   padding:0;
+}
 
+img {
+  width: 100%;
 }
 
 #homepage{
@@ -16,15 +29,6 @@ body{
   background-size: cover;
 }
 
-img {
-  width: 100%;
-}
-
-::selection     {background: rgb(255,255,255);}
-::-moz-selection  {background: rgb(255,255,255);}
-img::selection    {background: transparent;}
-img::-moz-selection {background: transparent;}
-body {-webkit-tap-highlight-color: rgb(255,255,255);}
 
 h1 {
   font-family: "alternate-gothic-no-1-d";
@@ -65,7 +69,7 @@ h2 {
 
 #container{
   -moz-box-sizing: border-box;
-    margin: 48px auto 0;
+    margin: 48px auto;
     max-width: 1540px;
     padding: 0 24px;
     width: 100%;
@@ -73,22 +77,27 @@ h2 {
 
 #sidebar {
   -moz-box-sizing: border-box;
-    display: inline-block;
     padding-right: 0px;
     position: inherit;
     text-align: left;
     vertical-align: top;
-    width: 25%;
+    width: 24%;
+    max-width: 290px;
+    margin: 0 10px 0 10px;
+    min-width: 290px;
+    position: fixed;
+
 }
 
 #content {
    -moz-box-sizing: border-box;
-    display: inline-block;
-    max-width: 840px;
+   margin-left: 22%;
+    max-width: 900px;
     position: relative;
     vertical-align: top;
     width: 60%;
-    padding: 0 50px 0 0;
+    padding: 0 0px 0 0;
+    float: left;
 }
 
 #content p {
@@ -144,6 +153,7 @@ h2 {
   margin: 0 0 0 -4px;
   height: 20px;
 }
+
 
 .menu li a{
   padding: 5px 12px 3px 12px;
