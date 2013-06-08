@@ -77,21 +77,21 @@ h2 {
 
 #sidebar {
   -moz-box-sizing: border-box;
-    padding-left: 10px;
+    padding-right: 0px;
     position: inherit;
     text-align: left;
     vertical-align: top;
     width: 24%;
-    max-width: 310px;
+    max-width: 290px;
     margin: 0 10px 0 10px;
-    min-width: 300px;
+    min-width: 290px;
     position: fixed;
 
 }
 
 #content {
    -moz-box-sizing: border-box;
-   margin-left: 27%;
+   margin-left: 22%;
     max-width: 900px;
     position: relative;
     vertical-align: top;
