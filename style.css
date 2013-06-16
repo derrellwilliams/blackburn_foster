@@ -1,3 +1,21 @@
+/*
+Theme Name: Blackburn and Foster
+Theme URI: http://wordpress.org/extend/themes/twentyeleven
+Author: the WordPress team
+Author URI: http://wordpress.org/
+Description: B and F
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: blackburn and foster
+*/
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+
+
 ::selection     {background: rgb(255,255,255);}
 ::-moz-selection  {background: rgb(255,255,255);}
 img::selection    {background: transparent;}
@@ -9,7 +27,7 @@ body {-webkit-tap-highlight-color: rgb(255,255,255);}
   }
 
 body{
-	background-color: #f6f1e9;
+background-color: #f6f1e9;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -31,7 +49,7 @@ img {
 
 
 h1 {
-  font-family: "alternate-gothic-no-1-d";
+  font-family: "alternate-gothic-no-1-d", helvetica;
   font-size: 56px;
   line-height: 48px;
   font-weight: 100;
@@ -39,13 +57,19 @@ h1 {
 }
 
 h2 {
-  font-family: "alternate-gothic-no-1-d";
+  font-family: "alternate-gothic-no-1-d", helvetica;
   font-size: 33px;
   line-height: 48px;
   font-weight: 100;
   color: #333739;
   margin: 0;
-  padding: 20px 0 5px 0;
+  padding: 4px 0 5px 0;
+}
+
+#nav-single{
+  margin-bottom: 40px;
+  font-family: "alternate-gothic-no-1-d", helvetica;
+  font-size: 23px;
 }
 
 #top, #bottom, #left, #right {
@@ -91,7 +115,7 @@ h2 {
 
 #content {
    -moz-box-sizing: border-box;
-   margin-left: 22%;
+   margin-left: 24%;
     max-width: 900px;
     position: relative;
     vertical-align: top;
@@ -101,12 +125,17 @@ h2 {
 }
 
 #content p {
-  margin: 0;
+  margin: 0px 0 0 0;
   padding: 0px 0 0 0;
 
 }
 
-.post{
+p.date{
+  font-family: courier;
+  font-size: 15px;
+}
+
+.post {
   padding-bottom: 40px;
   margin-bottom: 40px;
   border-bottom: 1px solid black;
@@ -263,4 +292,103 @@ p {
 	margin-top: 30px;
 	margin-left: 0px;
 }
+
+@charset "UTF-8";
+
+/*
+SOCIAL ICONS
+*/
+
+@font-face {
+  font-family: "SSSocial";
+  src: url('webfonts/ss-social-circle.eot');
+  src: url('webfonts/ss-social-circle.eot?#iefix') format('embedded-opentype'),
+       url('webfonts/ss-social-circle.woff') format('woff'),
+       url('webfonts/ss-social-circle.ttf') format('truetype'),
+       url('webfonts/ss-social-circle.svg#SSSocialCircle') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SSSocial";
+  src: url('webfonts/ss-social-regular.eot');
+  src: url('webfonts/ss-social-regular.eot?#iefix') format('embedded-opentype'),
+       url('webfonts/ss-social-regular.woff') format('woff'),
+       url('webfonts/ss-social-regular.ttf') format('truetype'),
+       url('webfonts/ss-social-regular.svg#SSSocialRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ss-icon, [class^="ss-"]:before, [class*=" ss-"]:before,
+.ss-icon.ss-social-circle, [class^="ss-"].ss-social-circle:before, [class*=" ss-"].ss-social-circle:before,
+.ss-icon.ss-social, [class^="ss-"].ss-social:before, [class*=" ss-"].ss-social:before {
+  font-family: "SSSocial";
+
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -webkit-font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -moz-font-feature-settings: "liga", "dlig";
+  -ms-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
+}
+
+.social_icons{
+  font-size: 30px;
+  color: #333739;
+}
+
+.social_icons a {
+  color: #333739;;
+}
+
+.social_icons a:hover{
+  color:#656565;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+
+}
+
+.ss-icon.ss-social-circle, [class^="ss-"].ss-social-circle:before, [class*=" ss-"].ss-social-circle:before {
+  font-weight: bold;
+}
+
+.ss-facebook:before{content:''}.ss-twitter:before{content:''}.ss-linkedin:before{content:''}.ss-googleplus:before{content:''}.ss-tumblr:before{content:''}.ss-wordpress:before{content:''}.ss-blogger:before{content:''}.ss-posterous:before{content:''}.ss-youtube:before{content:''}.ss-vimeo:before{content:''}.ss-flickr:before{content:''}.ss-instagram:before{content:''}.ss-pinterest:before{content:''}.ss-dribbble:before{content:''}.ss-behance:before{content:''}.ss-github:before{content:''}.ss-paypal:before{content:''}.ss-foursquare:before{content:''}.ss-skype:before{content:''}.ss-mail:before{content:'✉'}
+
+
+@media only screen and (min-width: 0px) and (max-width: 649px) {
+  p.icons{
+  padding-top:80px;
+  padding-bottom:20px;
+  margin:auto;
+  text-align:center;
+  font-size:50px;
+  color:#464646;
+
+}
+
+
+@media screen and (max-width: 480px)  {
+
+  p.icons{
+  padding-top:80px;
+  padding-bottom:20px;
+  margin:auto;
+  text-align:center;
+  font-size:40px;
+  color:#464646;
+
+}
+
+
+
+
 
