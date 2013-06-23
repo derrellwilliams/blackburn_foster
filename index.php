@@ -22,9 +22,9 @@
 
       <div class="menu">
         <ul>
-          <li class="one"><a href="#">Work</a></li>
-          <li class="two"><a href="#">About</a></li>
-          <li class="three"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Blog</a></li>
+          <li class="one"><a href="http://localhost:8888/blackburn_foster_wp/work">Work</a></li>
+          <li class="two"><a href="http://localhost:8888/blackburn_foster_wp/about">About</a></li>
+          <li class="three"><a href="http://localhost:8888/blackburn_foster_wp/blog">Blog</a></li>
         </ul>
       </div>
 

@@ -17,14 +17,14 @@
 <div id="container">
   <div id="sidebar">
     <div class="logotype">
-      <h1><a href="blackburn_foster/index.html">BLACKBURN and FOSTER</a></h1>
+      <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>">BLACKBURN and FOSTER</a></h1>
     </div>
 
       <div class="menu">
         <ul>
-          <li class="one"><a href="#">Work</a></li>
-          <li class="two"><a href="#">About</a></li>
-          <li class="three"><a href="/blackburn_foster/blog.html">Blog</a></li>
+          <li class="one"><a href="http://localhost:8888/blackburn_foster_wp/work">Work</a></li>
+          <li class="two"><a href="http://localhost:8888/blackburn_foster_wp/about">About</a></li>
+          <li class="three"><a href="http://localhost:8888/blackburn_foster_wp/blog">Blog</a></li>
         </ul>
       </div>
 

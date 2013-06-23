@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Allan Glanfield - Menswear Designer</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<title><?php bloginfo(); ?></title>
+<?php /* Template Name: About */ ?>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo ( 'stylesheet_url' ); ?>">
 <script type="text/javascript" src="//use.typekit.net/gmj5rob.js"></script>
-<link rel="stylesheet" media="screen, projection" href="webfonts/ss-social.css" />
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
@@ -17,18 +17,17 @@
 <div id="container">
   <div id="sidebar">
     <div class="logotype">
-      <h1><a href="./index.html">BLACKBURN <br> and FOSTER</a></h1>
+      <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>">BLACKBURN and FOSTER</a></h1>
     </div>
 
       <div class="menu">
         <ul>
-          <li class="one"><a href="#">Work</a></li>
-          <li class="two"><a href="#">About</a></li>
-          <li class="three"><a href="./blog.html">Blog</a></li>
+          <li class="one"><a href="http://localhost:8888/blackburn_foster_wp/work">Work</a></li>
+          <li class="two"><a href="http://localhost:8888/blackburn_foster_wp/about">About</a></li>
+          <li class="three"><a href="http://localhost:8888/blackburn_foster_wp/blog">Blog</a></li>
         </ul>
       </div>
 
-    	<p>Blackburn and Foster <br> is a menswear brand focusing on durable products that build character over time.</p>
 
       <div class="social_icons">
         <a href="#" i class="ss-icon ss-social-circle">Facebook</i></a>
@@ -40,28 +39,19 @@
 
   <div id="content">
 
-    <article>
+    <div class="post">
 
-        <img src="images/1.jpg">
-        <h2>Opening Night</h2>
+        <img src="images/profile.png">
+        <h2>Meet Allan</h2>
         <p>Tons of people came out for opening night at the F.I.T museum. It's so easy to get caught up in what you're doing you forget about all the people majoring in the different arts. The illustration exhibit is unbelievable. I'm going to go back and take some more photos.</p>
 
         <div class="button">
           <a href="#" class="btn btn-large">Read More</a>
          </div>
 
-    </article>
-
-    <div class="post">
-        <img src="images/2.jpg">
-        <h2>Pulling Inspiration</h2>
-        <p>Now that the craziness from my final collection is over, I'm learning how to rub off existing garments so that I can replicate them. I'm always inspired by vintage garments so this is really cool and a great thing for me to know.</p>
-
-        <div class="button">
-          <a href="#" class="btn btn-large">Read More</a>
-         </div>
-
     </div>
+
+
 
   </div>
 </div>

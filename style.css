@@ -435,6 +435,11 @@ SOCIAL ICONS
 
 }
 
+p.bio {
+  float: right;
+  margin: 10px 0px 0 30px;
+}
+
 
 
 }
@@ -463,6 +468,11 @@ SOCIAL ICONS
     min-width: 300px;
     position: relative;
 
+}
+
+p.bio {
+  float: none;
+  margin: 10px 125px 0 30px;
 }
 
 }
