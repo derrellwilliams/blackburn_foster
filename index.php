@@ -17,7 +17,7 @@
 <div id="container">
   <div id="sidebar">
     <div class="logotype">
-      <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>">BLACKBURN <br> and FOSTER</a></h1>
+      <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>">BLACKBURN and FOSTER</a></h1>
     </div>
 
       <div class="menu">
@@ -34,22 +34,22 @@
         <a href="#" i class="ss-icon ss-social-circle">Twitter</i></a>
         <a href="#" i class="ss-icon ss-social-circle">Linkedin</i></a>
       </div>
+
   </div>
 </div>
 
-<div id="primary">
-      <div id="content">
-      <?php if (have_posts()) : ?>
+  <div id="content">
+    <?php if (have_posts()) : ?>
+      <?php while (have_posts()) : the_post(); ?>
+        <div class="post">
+          <p class="date"><?php the_date(); ?></p>
+          <h2><?php the_title(); ?></h2>
+          <p><?php the_content('<div class="button btn btn-large">Read More</div>'); ?></p>
+        </div>
+      <?php endwhile ?>
+    <?php endif ?>
+  </div>
 
-          <div class="post">
-          <?php while (have_posts()) : the_post(); ?>
-            <p class="date"><?php the_date(); ?></p>
-            <h2><?php the_title(); ?></h2>
-            <p><?php the_content('Read the rest of this entry &raquo;'); ?></p>
-          <?php endwhile ?>
-        <?php endif ?>
-</div>
-</div>
 
 </body>
 

@@ -17,7 +17,7 @@
 <div id="container">
   <div id="sidebar">
     <div class="logotype">
-      <h1><a href="blackburn_foster/index.html">BLACKBURN <br> and FOSTER</a></h1>
+      <h1><a href="blackburn_foster/index.html">BLACKBURN and FOSTER</a></h1>
     </div>
 
       <div class="menu">
