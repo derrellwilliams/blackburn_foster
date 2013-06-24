@@ -47,6 +47,7 @@
             <p class="date"><?php the_date(); ?></p>
             <h2><?php the_title(); ?></h2>
             <p><?php the_content('Read the rest of this entry &raquo;'); ?></p>
+            <?php comments_template( '', true ); ?>
           <?php endwhile ?>
         <?php endif ?>
       </div>
