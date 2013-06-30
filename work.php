@@ -17,14 +17,14 @@
 <div id="container">
   <div id="sidebar">
     <div class="logotype">
-      <h1><a href="./index.html">BLACKBURN and FOSTER</a></h1>
+      <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>">BLACKBURN <br> and FOSTER</a></h1>
     </div>
 
       <div class="menu">
         <ul>
-          <li class="one"><a href="http://localhost:8888/blackburn_foster_wp/work">Work</a></li>
-          <li class="two"><a href="http://localhost:8888/blackburn_foster_wp/about">About</a></li>
-          <li class="three"><a href="http://localhost:8888/blackburn_foster_wp/blog">Blog</a></li>
+          <li class="one"><a href="<?php echo esc_url( home_url( '/work' ) ); ?>">Work</a></li>
+          <li class="two"><a href="<?php echo esc_url( home_url( '/about' ) ); ?>">About</a></li>
+          <li class="three"><a href="<?php echo esc_url( home_url( '/blog' ) ); ?>">Blog</a></li>
         </ul>
       </div>
 
@@ -39,7 +39,7 @@
 
   <div id="content">
 
-    <div class="post">
+    <div class="post-no-border">
         <h2>Coming Soon</h2>
 
 

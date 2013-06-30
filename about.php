@@ -22,9 +22,9 @@
 
       <div class="menu">
         <ul>
-          <li class="one"><a href="http://localhost:8888/blackburn_foster_wp/work">Work</a></li>
-          <li class="two"><a href="http://localhost:8888/blackburn_foster_wp/about">About</a></li>
-          <li class="three"><a href="http://localhost:8888/blackburn_foster_wp/blog">Blog</a></li>
+          <li class="one"><a href="<?php echo esc_url( home_url( '/work' ) ); ?>">Work</a></li>
+          <li class="two"><a href="<?php echo esc_url( home_url( '/about' ) ); ?>">About</a></li>
+          <li class="three"><a href="<?php echo esc_url( home_url( '/blog' ) ); ?>">Blog</a></li>
         </ul>
       </div>
 
@@ -39,16 +39,10 @@
 
   <div id="content">
 
-    <div class="post">
-
-        <img src="images/profile.png">
+    <div class="post-no-border">
+      <img src="wp-content/uploads/profile.png">
         <h2>Meet Allan</h2>
-        <p>Tons of people came out for opening night at the F.I.T museum. It's so easy to get caught up in what you're doing you forget about all the people majoring in the different arts. The illustration exhibit is unbelievable. I'm going to go back and take some more photos.</p>
-
-        <div class="button">
-          <a href="#" class="btn btn-large">Read More</a>
-         </div>
-
+          <p class="no-border">Tons of people came out for opening night at the F.I.T museum. It's so easy to get caught up in what you're doing you forget about all the people majoring in the different arts. The illustration exhibit is unbelievable. I'm going to go back and take some more photos.</p>
     </div>
 
 
